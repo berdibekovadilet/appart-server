@@ -8,8 +8,8 @@ async function start() {
   const app = await NestFactory.create(AppModule);
 
   const config = new DocumentBuilder()
-    .setTitle("Online Store REST API")
-    .setDescription("REST API Documentation for Robots Vacuum Cleaners store")
+    .setTitle("Rent Apartment Service REST API")
+    .setDescription("REST API Documentation for Rent Apartment Service")
     .setVersion("1.0.0")
     .addTag("Make by Adilet Berdibekov")
     .build();
