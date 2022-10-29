@@ -13,7 +13,9 @@ import { PostsService } from "./posts.service";
 import { CreatePostDto } from "./dto/create-post.dto";
 import { UpdatePostDto } from "./dto/update-post.dto";
 import { FileInterceptor } from "@nestjs/platform-express";
+import { ApiTags } from "@nestjs/swagger";
 
+@ApiTags("Посты")
 @Controller("posts")
 export class PostsController {
   constructor(private readonly postsService: PostsService) {}
